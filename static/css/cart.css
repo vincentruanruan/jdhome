@@ -1,0 +1,419 @@
+.mui-row {
+    background: #fff;
+    color: #666;
+}
+
+.cart {
+    padding: 2rem;
+    position: relative;
+}
+
+.cart .header {
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 4.2rem;
+    background: #fff;
+    font-size: 1.5rem;
+}
+
+.cart .row {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cart .list {
+    margin-bottom: 7rem;
+}
+
+.cart .list .desc {
+    padding: 1.5rem 0;
+    position: relative;
+    height: 13rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.cart .list .desc .bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cart .list .desc.descCheck .checkbox {
+    background: url(../../imgs/checkbox_round_0.png);
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    background-size: 100%;
+    transition: all 0.3s;
+}
+
+.cart .list .desc.descCheck .checkbox.check {
+    background: url(../../imgs/checkbox_round_1.png);
+    background-size: 100%;
+}
+
+.cart .list .desc.descGoods {
+    padding-left: 12rem;
+}
+
+.cart .list .desc.descGoods .icon {
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+}
+
+.cart .list .desc.descGoods .info {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 2rem;
+}
+
+.cart .list .desc.descGoods .type {
+    position: absolute;
+    left: 12rem;
+    bottom: 2rem;
+    color: #999;
+}
+
+.cart .list .desc.number .num {
+    display: inline-block;
+    border: 0.1rem #e0e0e0 solid;
+    border-radius: 0.3rem;
+}
+
+.cart .list .desc.number .num input {
+    float: left;
+    height: 3rem;
+    color: #666;
+    border: none;
+    margin: 0;
+}
+
+.cart .list .desc.number .num input[type="button"] {
+    width: 3rem;
+    font-size: 1.6rem;
+}
+
+.cart .list .desc.number .num input[type="number"] {
+    width: 8rem;
+    text-align: center;
+    border: 0.1rem #e0e0e0 solid;
+    border-top: none;
+    border-bottom: none;
+    font-size: 1.5rem;
+}
+
+.cart .list .desc.price {
+    color: #FC3E51;
+}
+
+.cart .bottom {
+    position: fixed;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+    line-height: 6rem;
+    height: 6rem;
+    border-top: 0.1rem solid #f0f0f0;
+    padding: 0 2rem;
+}
+
+.cart .bottom .left, .cart .bottom .right {
+    flex: 50%;
+    color: #666;
+    font-size: 2rem;
+}
+
+.cart .bottom .left {
+    padding-left: 14rem;
+}
+
+.cart .bottom .left .btns {
+    display: inline-block;
+}
+
+.cart .bottom .left .btns span {
+    display: inline-block;
+    line-height: 3rem;
+    margin-right: 2rem;
+    transition: 0.3s all;
+}
+
+.cart .bottom .left .btns span:active {
+    opacity: 0.7;
+}
+
+.cart .bottom .left .btns span#youhui {
+    color: #fff;
+    background: #FC3E51;
+    line-height: 4rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    border-radius: 0.3rem;
+}
+
+.cart .bottom .left .checkbox {
+    background: url(../../imgs/checkbox_round_0.png) no-repeat;
+    width: 4rem;
+    height: 3rem;
+    display: inline-block;
+    background-size: auto 100%;
+    transition: all 0.3s;
+    top: 1.5rem;
+    left: 5rem;
+    position: absolute;
+}
+
+.cart .bottom .left .checkbox.check {
+    background: url(../../imgs/checkbox_round_1.png) no-repeat;
+    background-size: auto 100%;
+}
+
+.cart .bottom .left .checkbox text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 3rem;
+    transform: translateX(100%);
+    /* padding-left: 1rem; */
+}
+
+.cart .bottom .right {
+    text-align: right;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.cart .bottom .right .inner {
+    padding-right: 11rem;
+}
+
+.cart .bottom .right .inner b {
+    color: #FC3E51;
+}
+
+.cart .bottom .right .submit {
+    position: absolute;
+    right: 0rem;
+    line-height: 4rem;
+    top: 1rem;
+    background: #FC3E51;
+    color: #fff;
+    padding: 0 3rem;
+    border-radius: 0.3rem;
+    transition: 0.5s all;
+}
+
+.cart .bottom .right .submit:active {
+    opacity: 0.7;
+}
+
+.youhui-psw {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    transition: 0.3s all;
+    display: none;
+}
+
+.youhui-psw.on {
+    display: block;
+}
+
+.youhui-psw .inner {
+    background: #fff;
+    position: absolute;
+    width: 35rem;
+    /* height: 10rem; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* padding-bottom: 2rem; */
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.youhui-psw .inner .title {
+    line-height: 4rem;
+    font-size: 1.3rem;
+    text-align: center;
+    background: #FC3E51;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.youhui-psw .inner .input {
+    padding: 0rem 2rem;
+}
+
+.youhui-psw .inner .input.inputCode{
+    display: flex;
+}
+.youhui-psw .inner .input.inputCode input{
+    flex: 50%;
+}
+
+#userBtn.disable{
+    background: #666;
+    border-color: #666;
+}
+
+.youhui-psw .inner .input input {
+    height: 4rem;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.youhui-psw .inner .input input[type="button"] {
+    background: #FC3E51;
+    color: #fff;
+    border: none;
+    translate: 0.3s all;
+}
+
+.youhui-psw .inner .input input[type="button"]:active {
+    opacity: 0.3;
+}
+
+.youhui-price {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    transition: 0.3s all;
+    display: none;
+}
+
+.youhui-price .inner {
+    background: #fff;
+    position: absolute;
+    width: 35rem;
+    /* height: 10rem; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* padding-bottom: 2rem; */
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.youhui-price .inner .price {
+    text-align: center;
+    padding: 1.5rem;
+    /* border-bottom: 0.05rem solid #f0f0f0; */
+}
+
+.youhui-price .inner .price span {
+    display: inline-block;
+    transition: 0.3s all;
+    padding: 0 1rem;
+    border-radius: 0.3rem;
+    line-height: 2.5rem;
+    margin: 0 1rem;
+}
+
+.youhui-price .inner .price span.on {
+    background: #FC3E51;
+    color: #fff;
+}
+
+.youhui-price .inner .bg {
+    display: none;
+    padding-bottom: 2rem;
+}
+
+.youhui-price .inner .bg.on {
+    display: block;
+}
+
+.youhui-price .inner .bg .item {
+    padding: 0 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.youhui-price .inner .bg .item input {
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.youhui-price .inner .bg .item input[type="button"] {
+    background: #FC3E51;
+    color: #fff;
+    border: none;
+}
+
+.youhui-price .inner .bg .item input[type="button"]:active {
+    opacity: 0.8;
+}
+
+.youhui-price .inner .bg.dz .item.input {
+    display: flex;
+}
+
+.youhui-price .inner .bg.dz .item.input input[type="text"], .youhui-price .inner .bg.dz .item.input input[type="number"] {}
+
+.youhui-price .inner .bg.dz .item.input .price1, .youhui-price .inner .bg.dz .item.input .price2 {
+    border: none;
+}
+
+.youhui-price .inner .bg.dz .item.input input[type="number"] {
+    flex: 30%;
+}
+
+.youhui-price .inner .bg.dz .item.input span {
+    flex: 10%;
+    display: inline-block;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FC3E51;
+}
+
+.youhui-price .inner .bg.dz .tip {
+    text-align: right;
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    padding: 0 2rem;
+}
+
+.youhui-price .inner .bg.dz .item.input .price1 {
+    line-height: 4rem;
+    /* text-align: center; */
+    font-size: 1.8rem;
+    flex: 60%;
+}
+
+.youhui-price .inner .bg.dz .item.input .price2 {
+    font-size: 2.2rem;
+    line-height: 4rem;
+    color: #FC3E51;
+    text-align: center;
+    margin-bottom: 1rem;
+    flex: 100%;
+}
+

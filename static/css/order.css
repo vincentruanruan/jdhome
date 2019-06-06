@@ -1,0 +1,456 @@
+.mui-row {
+    background: #fff;
+    color: #666;
+}
+
+.order {
+    padding: 2rem;
+    position: relative;
+}
+
+.order #orderBtn {
+    background: #E01C24;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: 0.3s all;
+}
+
+.order .optionBtns {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.order .optionBtns span {
+    border: .1rem rgb(255, 66, 77) solid;
+    color: rgb(255, 66, 77);
+    background: #FFF;
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0 2rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    transition: 0.3s all ease-in;
+}
+
+.order .optionBtns span:active {
+    opacity: 0.6;
+}
+
+.order .phone {
+    text-align: center;
+    color: #666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10;
+    transition: 0.5s all ease;
+    transform: translateY(-100%);
+}
+
+.order .phone.in {
+    transform: translateY(0%);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.order .phone .inner {
+    width: 35rem;
+    /* background: yellow; */
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    padding-top: 0;
+    border-radius: 0.5rem;
+    transition: 0.3s all;
+}
+
+.order .phone .inner .title {
+    line-height: 5rem;
+    font-size: 1.3rem;
+}
+
+.order .phone .inner .bg {
+    /* display: flex; */
+}
+
+.order .phone .inner .bg input[type="button"] {
+    background: #E01C24;
+    color: #fff;
+    border-color: #E01C24;
+    transition: 0.3s all;
+}
+
+.order .phone .inner .bg input[type="button"]:active {
+    opacity: 0.6;
+}
+
+.order .phone .inner .bg .item {
+    flex: 50%;
+    display: flex;
+    padding: 1rem;
+    /* display: flex; */
+    /* padding: 0.5rem; */
+}
+
+.order .phone .inner .bg .item.confirmBox {
+    display: block;
+}
+
+.order .phone .inner .bg .item #confirm {
+    width: 100%;
+}
+
+.order .phone .inner .bg .item input {
+    margin: 0 0.5rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+.order .phone .inner .bg .item.paytype{
+    display: flex;
+    padding: 1rem 1.5rem;
+}
+.order .phone .inner .bg .item.paytype span{
+    flex: calc(100% / 3);
+    font-size: 1.2rem;
+    transition: 0.3s all;
+    border-radius: 0.3rem;
+    line-height: 3rem;
+    border: 0.05rem solid #fff;
+}
+.order .phone .inner .bg .item.paytype span.on{
+    border: 0.05rem solid #E01C24;
+}
+.order .phone .inner .bg .item.paytype span i{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-right: 0.3rem;
+}
+.order .phone .inner .bg .item.paytype span.on i.icon-weixin{
+    color: #1FB922;
+}
+.order .phone .inner .bg .item.paytype span.on i.icon-iconfontrectangle390{
+    color: #1AA2E6;
+}
+.order .phone .inner .bg .item.paytype span.on i.icon-qianbao{
+    color: #F7E74A;
+}
+
+.order .qrcode {
+    text-align: center;
+    color: #666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10;
+    transition: 0.5s all ease;
+    transform: translateY(-100%);
+}
+
+.order .qrcode.in {
+    transform: translateY(0%);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.order .qrcode .bg {
+    /* height: 40%; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.order .qrcode .bg .title {
+    line-height: 3rem;
+    font-size: 1.6rem;
+}
+
+.order .qrcode .bg .title i {
+    color: #57C038;
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.order .qrcode #qrcodeImage {
+    height: 100%;
+}
+
+/* 
+.order #orderBtn:active {
+    opacity: 0.8;
+} */
+
+.order .header {
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 4.2rem;
+    background: #fff;
+    font-size: 1.5rem;
+}
+
+.order .row {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.order .list {
+    /* margin-bottom: 7rem; */
+}
+
+.order .list .desc {
+    padding: 1.5rem 0;
+    position: relative;
+    height: 13rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.order .list .desc .bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.order .list .desc.descCheck .checkbox {
+    background: url(../../imgs/checkbox_round_0.png);
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    background-size: 100%;
+    transition: all 0.3s;
+}
+
+.order .list .desc.descCheck .checkbox.check {
+    background: url(../../imgs/checkbox_round_1.png);
+    background-size: 100%;
+}
+
+.order .list .desc.descGoods {
+    padding-left: 13.5rem;
+}
+
+.order .list .desc.descGoods .icon {
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.order .list .desc.descGoods .info {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 2rem;
+}
+
+.order .list .desc.descGoods .type {
+    position: absolute;
+    left: 13.5rem;
+    bottom: 2rem;
+    color: #999;
+}
+
+.order .list .desc.number .num {
+    display: inline-block;
+    border: 0.1rem #e0e0e0 solid;
+    border-radius: 0.3rem;
+}
+
+.order .list .desc.number .num input {
+    float: left;
+    height: 3rem;
+    color: #666;
+    border: none;
+    margin: 0;
+}
+
+.order .list .desc.number .num input[type="button"] {
+    width: 3rem;
+    font-size: 1.6rem;
+}
+
+.order .list .desc.number .num input[type="number"] {
+    width: 8rem;
+    text-align: center;
+    border: 0.1rem #e0e0e0 solid;
+    border-top: none;
+    border-bottom: none;
+    font-size: 1.5rem;
+}
+
+.order .list .desc.price {
+    color: #FC3E51;
+}
+
+.order .bottom {
+    position: fixed;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+    line-height: 6rem;
+    height: 6rem;
+    border-top: 0.1rem solid #f0f0f0;
+    padding: 0 2rem;
+}
+
+.order .bottom .left, .order .bottom .right {
+    flex: 50%;
+    color: #666;
+    font-size: 2rem;
+}
+
+.order .bottom .left {
+    padding-left: 14rem;
+}
+
+.order .bottom .left .btns {
+    display: inline-block;
+}
+
+.order .bottom .left .btns span {
+    display: inline-block;
+    line-height: 3rem;
+    margin-right: 2rem;
+    transition: 0.3s all;
+}
+
+.order .bottom .left .btns span:active {
+    opacity: 0.7;
+}
+
+.order .bottom .left .checkbox {
+    background: url(../../imgs/checkbox_round_0.png) no-repeat;
+    width: 4rem;
+    height: 3rem;
+    display: inline-block;
+    background-size: auto 100%;
+    transition: all 0.3s;
+    top: 1.5rem;
+    left: 5rem;
+    position: absolute;
+}
+
+.order .bottom .left .checkbox.check {
+    background: url(../../imgs/checkbox_round_1.png) no-repeat;
+    background-size: auto 100%;
+}
+
+.order .bottom .left .checkbox text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 3rem;
+    transform: translateX(100%);
+    /* padding-left: 1rem; */
+}
+
+.order .bottom .right {
+    text-align: right;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.order .bottom .right .inner {
+    padding-right: 11rem;
+}
+
+.order .bottom .right .inner b {
+    color: #FC3E51;
+}
+
+.order .bottom .right .submit {
+    position: absolute;
+    right: 0rem;
+    line-height: 4rem;
+    top: 1rem;
+    background: #FC3E51;
+    color: #fff;
+    padding: 0 3rem;
+    border-radius: 0.3rem;
+    transition: 0.5s all;
+}
+
+.order .bottom .right .submit:active {
+    opacity: 0.7;
+}
+
+#closeBtn {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    font-size: 2rem;
+}
+
+#closeBtn, fa-circle {
+    /* color: rgba(0, 0, 0, 0.5); */
+}
+
+.qrcode .bg {
+    padding: 2rem;
+    background: #fff;
+}
+
+#getSMSBtn {
+    transition: 0.3s all;
+}
+
+#getSMSBtn.disable {
+    border-color: #666;
+    background: #666;
+}
+.totalPrice{
+    line-height: 5rem;
+    background: #ffff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    text-align: right;
+}
+.totalPrice span{
+    margin-left: 3rem;
+}
+.totalPrice span text{
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+}
+.totalPrice span.price1{
+    color: #666;
+    text-decoration: line-through;
+}
+.totalPrice span.price1 text{
+    color: #666;
+    text-decoration: line-through;
+}
+.totalPrice span.price2{
+    
+}
+.totalPrice span.price2 text{
+    color: #FC3E51;
+}
+.totalPrice span.price3 text{
+    color: #FC3E51;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title></title>
+
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="static/css/index.css" />
+	<link rel="stylesheet" href="static/src/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/common.css">
+	<link rel="stylesheet" href="static/src/swiper-4.5.0/css/swiper.min.css">
+</head>
+
+<body>
+
+	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_one"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_four"></div>
+			</div>
+		</div>
+	</div>
+
+	<ul id="floatRightBox">
+		<li>
+			<span class="fa-stack fa-3x" id="searchBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-search fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+		<li>
+			<b id="cartnumber">0</b>
+			<span class="fa-stack fa-3x" id="cartBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+		<li>
+			<span class="fa-stack fa-3x" id="catalogBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-th fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+		<li>
+			<span class="fa-stack fa-3x" id="topBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+	</ul>
+
+	<div id="searchBox" class="">
+		<div class="inner">
+			<span class="fa-stack clostBtn fa-lg">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-close fa-stack-1x fa-inverse"></i>
+			</span>
+			<div class="header">搜索</div>
+			<div class="key">
+				<input type="text" class="keyword" placeholder="请输入您要搜索的商品名称">
+			</div>
+			<div class="btn">
+				<input type="button" value="搜索">
+			</div>
+		</div>
+	</div>
+
+	<div class="" id="catalogBox">
+		<div class="inner">
+			<div class="btns">
+				<div class="btn reset">重置</div>
+				<div class="btn confirm">确认</div>
+			</div>
+			<div class="header">
+				商品分类
+				<i class="mui-icon mui-icon-closeempty closeBtn"></i>
+			</div>
+			<div class="group">
+				<div class="gitem">
+					<div class="title"></div>
+					<div class="list">
+						<!-- <span>推荐产品1</span>
+						<span>推荐产品2</span>
+						<span>推荐产3</span>
+						<span>推荐产4</span>
+						<span>推荐产品5</span>
+						<span>推品6</span>
+						<span>推荐产品7</span>
+						<span>推荐品8</span> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="index">
+
+		<div class="mui-content top">
+			<div class="mui-row">
+				<div class="mui-col-sm-6">
+					<div class="left">
+						<div class="ltitle">
+							<span>
+								<!-- 今日特价 -->
+							</span>
+						</div>
+						<!-- <div class="item">
+							<div class="icon"
+								style="background:url(https://via.placeholder.com/400) no-repeat center;background-size: 110% auto;">
+							</div>
+							<div class="title">
+								<div class="t">
+									123123123123123123123123123123123</div>
+							</div>
+							<div class="price">
+								<div class="group">
+									<div class="p1">￥123</div>
+									<div class="p2">￥123</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+				<div class="mui-col-sm-6">
+					<div class="right">
+						<div class="btns">
+							<ul>
+								<li><span class="s">搜索</span></li>
+								<li><span class="w">分类</span></li>
+							</ul>
+						</div>
+
+						<div class="swiper-container" id="swiper">
+							<div class="swiper-wrapper"></div>
+							<!-- 分页器 -->
+							<div class="swiper-pagination"></div>
+							<div class="imgGroup"></div>
+						</div>
+
+
+						<!-- <div class="mui-slider">
+							<div class="mui-slider-group mui-slider-loop" id="mslider"> -->
+
+								<!-- <div class="mui-slider-item mui-slider-item-duplicate">
+									<div class="item"
+										style="background:url(https://via.placeholder.com/200x150) no-repeat center;background-size: 110% auto;">
+									</div>
+								</div> -->
+
+							<!-- </div>
+						</div> -->
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mui-content goodsGroup">
+			<div class="mui-row">
+				<!-- <div class="mui-col-sm-4">
+					<div class="in">
+						<div class="mui-content list">
+							<div class="mui-row">
+								<div class="mui-col-sm-6 ">
+									<div class="ltitle">
+										精选推荐
+									</div>
+								</div>
+							</div>
+							<div class="mui-row">
+								<div class="mui-col-sm-6">
+									<div class="item">
+										<div class="bg">
+											<div class="icon"
+												style="background:url(https://via.placeholder.com/400) no-repeat center;background-size:110% auto;;">
+											</div>
+											<div class="title">
+												<div class="t">
+													123123123123123123123123123123123</div>
+											</div>
+											<div class="price">
+												<div class="group">
+													<div class="p1">￥123</div>
+													<div class="p2">立即抢购</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="catalogs">
+
+			<!-- <div class="list">
+				<div class="ltitle">XX系列 <span class="more">MORE>></span></div>
+				
+				<div class="item">
+					<div class="bg">
+						<div class="icon"
+							style="background:url(https://via.placeholder.com/400) no-repeat center;background-size:110% auto;">
+						</div>
+						<div class="title">
+							<div class="t">
+								123123123123123123123123123123123</div>
+						</div>
+						<div class="price">
+							<div class="group">
+								<div class="p1">￥123</div>
+								<div class="p2">立即抢购</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+		</div>
+
+
+
+	</div>
+
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="static/src/swiper-4.5.0/js/swiper.min.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/index.js"></script>
+
+</html>

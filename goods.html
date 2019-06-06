@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title></title>
+
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="static/css/goods.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/common.css" />
+	<link rel="stylesheet" href="static/src/font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_one"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_four"></div>
+			</div>
+		</div>
+	</div>
+
+	<ul id="floatRightBox">
+		<li>
+			<span class="fa-stack fa-3x" id="homeBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+		<li>
+			<span class="fa-stack fa-3x" id="backBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-reply fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+		<li>
+			<span class="fa-stack fa-3x" id="topBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+	</ul>
+
+	<div class="" id="catalogBox">
+		<div class="inner">
+			<div class="btns">
+				<div class="btn reset">重置</div>
+				<div class="btn confirm">确认</div>
+			</div>
+			<div class="header">
+				商品分类
+				<i class="mui-icon mui-icon-closeempty closeBtn"></i>
+			</div>
+			<div class="group">
+				<div class="gitem">
+					<div class="title"></div>
+					<div class="list">
+						<!-- <span>推荐产品</span> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="top">
+		<div class="search">
+			<div class="bg">
+				<div class="inner">
+					<input type="search" id="searchVal" placeholder="请输入您要搜索的商品">
+					<input type="button" value="搜索" id="searchBtn">
+				</div>
+			</div>
+			<div class="bg catalogBg">
+				<div class="inner">
+					<div class="catalogText"><text>所选分类：</text><text class="cname">全部</text></div>
+					<input type="button" value="分类" id="catalog">
+				</div>
+			</div>
+		</div>
+		<div class="type">
+			<div data-tag="type1" class="item on">综合</div>
+			<div data-tag="type2" class="item nor">销量 <i class="fa fa-fw fa-sort"></i><i
+					class="fa fa-fw fa-sort-up"></i><i class="fa fa-fw fa-sort-down"></i></div>
+			<div data-tag="type3" class="item nor">价格 <i class="fa fa-fw fa-sort"></i><i
+					class="fa fa-fw fa-sort-up"></i><i class="fa fa-fw fa-sort-down"></i></div>
+			<div data-tag="type4" class="item">筛选 <i class="fa fa-fw fa-filter"></i></div>
+		</div>
+	</div>
+
+	<div class="" id="selectBox">
+		<div class="inner">
+			<div class="btns">
+				<div class="btn" id="reset">重置</div>
+				<div class="btn" id="confirm">确认筛选</div>
+			</div>
+			<div class="header">
+				筛选属性
+				<i class="mui-icon mui-icon-closeempty closeBtn"></i>
+			</div>
+			<div class="group">
+				<!-- 
+				<div class="gitem">
+					<div class="title">商品分类 <span><text></text><i class="fa fa-fw fa-angle-down in"></i></span></div>
+					<div class="list listL open">
+						<span>推荐产品1</span>
+						<span>推荐产品2</span>
+					</div>
+				</div> 
+			-->
+			</div>
+		</div>
+	</div>
+
+	<div id="pullrefresh" class="mui-content mui-scroll-wrapper goods">
+		<div class="mui-scroll">
+			<div class="goodsGroup">
+				<div class="list ">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/goods.js"></script>
+<script type="text/javascript" charset="utf-8">
+	mui.init()
+</script>
+
+</html>

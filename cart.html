@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title></title>
+
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="static/css/cart.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/common.css" />
+	<link rel="stylesheet" href="static/src/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_one"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_four"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="youhui-psw">
+		<div class="inner">
+			<div class="title">验证商家密码</div>
+			<div class="input inputCode">
+				<input type="text" id="userid" placeholder=" 请输入员工号">
+				<input type="button" id="userBtn" value=" 获取验证码">
+			</div>
+			<div class="input">
+				<input type="text" id="userpsw" placeholder=" 请输入验证商家密码">
+			</div>
+			<div class="input">
+				<input type="button" value="验证" id="yhyzBtn">
+			</div>
+		</div>
+	</div>
+	<div class="youhui-price">
+		<div class="inner">
+			<div class="price">
+				<span class="on" data-type="sj">实价优惠</span>
+				<span data-type="dz">打折优惠</span>
+			</div>
+			<div class="bg sj on">
+				<div class="item">
+					<input type="text" class="price3" placeholder="请输入实价">
+				</div>
+				<div class="item">
+					<input type="button" value="确认并结算" class="saveAndSubmit">
+				</div>
+			</div>
+			<div class="bg dz">
+				<div class="item input">
+					<div class="price1">原价: ￥0</div>
+					<input type="number" placeholder="请输入折扣" value="10" max="10" min="0" class="zkInput">
+					<span>折</span>
+				</div>
+				<div class="tip">折扣只能填写 0 ~ 10</div>
+				<div class="item input">
+					<div class="price2">折后价: ￥0</div>
+				</div>
+				<div class="item">
+					<input type="button" value="确认并结算" class="saveAndSubmit">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ul id="floatRightBox">
+		<li>
+			<span class="fa-stack fa-3x" id="homeBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+		<li>
+			<span class="fa-stack fa-3x" id="backBtn">
+				<i class="fa fa-circle fa-stack-2x bg"></i>
+				<i class="fa fa-reply fa-stack-1x fa-inverse"></i>
+			</span>
+		</li>
+	</ul>
+
+	<div class="cart">
+
+
+		<div class="mui-content header">
+			<div class="mui-row">
+				<div class="mui-col-sm-1">
+					全部
+				</div>
+				<div class="mui-col-sm-5">
+					店铺宝贝
+				</div>
+				<div class="mui-col-sm-2">
+					单价
+				</div>
+				<div class="mui-col-sm-2">
+					数量
+				</div>
+				<div class="mui-col-sm-2">
+					小计
+				</div>
+			</div>
+		</div>
+		<div class="mui-content list">
+
+
+			<!-- <div class="mui-row row">
+				<div class="mui-col-sm-1">
+					<div class="desc descCheck">
+						<div class="bg">
+							<div class="checkbox"></div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-col-sm-5">
+					<div class="desc descGoods">
+						<div class="icon"
+							style="background:url(https://via.placeholder.com/200) no-repeat center;background-size: 110% auto;">
+						</div>
+						<div class="info">
+							哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+						</div>
+						<div class="type">规格：asd</div>
+					</div>
+				</div>
+				<div class="mui-col-sm-2">
+					<div class="desc sprice">
+						<div class="bg">￥<text>9900.00</text></div>
+					</div>
+				</div>
+				<div class="mui-col-sm-2">
+					<div class="desc number">
+						<div class="bg">
+							<div class="num">
+								<input type="button" data-tag="sub" value="-">
+								<input type="number" value="1" readonly />
+								<input type="button" data-tag="plus" value="+">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mui-col-sm-2">
+					<div class="desc price">
+						<div class="bg">￥9900.00</div>
+					</div>
+				</div>
+			</div> -->
+
+
+		</div>
+
+
+
+		<div class="bottom">
+			<div class="left">
+				<div class="checkbox all"><text>全选</text></div>
+				<div class="btns">
+					<span id="removeSelect">删除选中商品</span>
+					<span id="removeAll">清空购物车</span>
+					<span id="youhui">申请优惠</span>
+				</div>
+			</div>
+			<div class="right">
+				<div class="inner">已经选择 0 件商品 合计 <b>￥0</b></div>
+				<div class="submit" id="submit">结算</div>
+			</div>
+		</div>
+
+
+
+	</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/src/sweetalert.min.js"></script>
+<script src="static/js/cart.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+</script>
+
+</html>
